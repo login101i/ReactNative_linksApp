@@ -39,7 +39,7 @@ const SubTitle = styled.div`
 	justify-content: ${(props) => (props.textAlign ? props.textAlign : "left")};
 `;
 
-const Textt = ({
+const Text = ({
 	title,
 	size,
 	marginTop,
@@ -81,4 +81,4 @@ const Textt = ({
 	);
 };
 
-export default Textt;
+export default Text;

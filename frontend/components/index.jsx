@@ -1,4 +1,5 @@
-import Flex from "./Flex";
-import Textt from "./Text";
+import Flex from './Flex';
+import Text from './Text';
+import {SafeArea} from './SafeArea'
 
-export { Flex, Textt };
+export { Flex, Text, SafeArea };

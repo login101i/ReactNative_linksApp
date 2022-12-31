@@ -49,7 +49,7 @@ const ForgotPassword = ({ navigation }) => {
 
 		try {
 			const { data } = await axios.post(
-				"http://localhost:8000/api/forgot-password",
+				"http://localhost:8800/api/forgot-password",
 				{ email }
 			);
 			if (data.error) {
@@ -72,7 +72,7 @@ const ForgotPassword = ({ navigation }) => {
 
 		try {
 			const { data } = await axios.post(
-				"http://localhost:8000/api/reset-password",
+				"http://localhost:8800/api/reset-password",
 				{ email, password, resetCode }
 			);
 			if (data.error) {

@@ -4,11 +4,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { AuthProvider } from "./context/auth";
 import { LinkProvider } from "./context/link";
 import { theme } from "./infrastructure/theme";
-
 import { ScreensNav } from "./components/nav";
 
 export function Navigation() {
-	
+
 	return (
 		<ThemeProvider theme={theme}>
 			<NavigationContainer independent={true}>

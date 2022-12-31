@@ -43,13 +43,13 @@ const TrendingLinks = ({ navigation }) => {
 	}, []);
 
 	const fetchLinks = async () => {
-		const { data } = await axios.get("http://localhost:8000/api/links");
+		const { data } = await axios.get("http://localhost:8800/api/links");
 
 		setLinks(data);
 	};
 
 	const handlePress = async (link) => {
-		await axios.put(`http://localhost:8000/api/view-count/${link._id}`);
+		await axios.put(`http://localhost:8800/api/view-count/${link._id}`);
 		navigation.navigate("LinkView", { link });
 
 		setLinks(() => {
